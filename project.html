@@ -2,124 +2,80 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/project.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Muhammad Naim</div>
+    <!-- navbar -->
+    <nav>
+      <a href="index.html"><img src="assets/icons/logo.png" class="logo"/></a>
       <div>
-        <ul class="nav-links">
+        <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="achievement.html">Achievement</a></li>
           <li><a href="education.html">Education</a></li>
-          <li><a href="project.html">Project</a></li>
+          <li><a href="project.html" class="active">Project</a></li>
+          <li><a href="achievement.html">Achievement</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Muhammad Naim</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="achievement.html">Achievement</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+
+    <!-- section -->
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/images/project-1.png"
-                alt="Password Generator"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Password Generator</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/MatSantai/password-generator'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                href="https://matsantai.github.io/password-generator/"
-                target="_blank"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
+      <p class="sub-title">Get To Know More</p>
+      <h1 class="title">My Projects</h1>
+      <div class="project-container">
+        <div class="project-card">
+          <img src="assets/images/project-2.png" alt="UPM Bus Tracker Screenshot" class="project-image">
+          <h3 class="project-title">UPM Bus Tracker</h3>
+          <p class="project-description">
+            Real-time bus tracking system for Universiti Putra Malaysia. Built using Laravel.
+          </p>
+          <a href="#" class="project-link" target="_blank">View Project</a>
+          <a href="https://github.com/matsantai/bus-tracker" class="github-link" target="_blank">GitHub</a>
         </div>
+
+        <div class="project-card">
+          <img src="assets/images/project-4.png" alt="Portfolio Website Screenshot" class="project-image">
+          <h3 class="project-title">Personal Portfolio</h3>
+          <p class="project-description">
+            My personal website built with pure HTML and CSS. Clean, responsive, and simple.
+          </p>
+          <a href="https://matsantai.github.io/SSE3308_224234_LAB2/" class="project-link" target="_blank">View Website</a>
+          <a href="https://github.com/matsantai/SSE3308_224234_LAB2" class="github-link" target="_blank">GitHub</a>
+        </div>
+    
+        <div class="project-card">
+          <img src="assets/images/project-3.png" alt="Random Password Generator Screenshot" class="project-image">
+          <h3 class="project-title">Random Password Generator</h3>
+          <p class="project-description">
+            Website for generating random password using with HTML, CSS and JavaScript.
+          </p>
+          <a href="https://matsantai.github.io/password-generator/" class="project-link" target="_blank">View Project</a>
+          <a href="https://github.com/matsantai/password-generator" class="github-link" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/images/project-5.png" alt="Passenger Counter Screenshot" class="project-image">
+          <h3 class="project-title">Passenger Counter</h3>
+          <p class="project-description">
+            Passenger counter website for beginner learner in HTML, CSS and JavaScript.
+          </p>
+          <a href="https://matsantai.github.io/passenger-counter/" class="project-link" target="_blank">View Project</a>
+          <a href="https://github.com/matsantai/passenger-counter" class="github-link" target="_blank">GitHub</a>
+        </div>
+    
       </div>
     </section>
+    
+    
+    
+    
+
     <footer>
       <p>Copyright &#169; 2025 Muhammad Naim. All Rights Reserved.</p>
     </footer>

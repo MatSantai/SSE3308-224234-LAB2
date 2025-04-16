@@ -1,0 +1,92 @@
+#education {
+  background-color: #efefef;
+  padding-bottom: 8rem;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.edu-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.entry-year {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2e4973;
+  border-top: 6px solid #ffa500;
+  padding-top: 12px;
+}
+
+.edu-card {
+  background-color: #fff;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 20px;
+  padding: 20px;
+  background: #fdfdfd;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.edu-logo {
+  width: 100px;
+  height: auto;
+}
+
+.card-info h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.card-info p {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #555;
+}
+
+.card-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.card-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+}
+
+.card-images::-webkit-scrollbar {
+  height: 6px;
+}
+
+.card-images::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.card-images img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  flex-shrink: 0;
+}
+
