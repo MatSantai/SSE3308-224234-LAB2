@@ -1,8 +1,8 @@
 #about {
   position: relative;
   background-color: #efefef;
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: 13rem;
+  padding-right: 13rem;
   height: 80vh;
 }
 
@@ -16,7 +16,7 @@
 .about-pic-container {
   display: flex;
   width: 250px;
-  height: 400px;
+  height: 390px;
 }
 
 .about-pic-container img {
